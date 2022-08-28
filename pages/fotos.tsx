@@ -1,6 +1,10 @@
+import { Layout } from "../components";
+
 const Fotos = () => {
     return (
-    <div>Fotos</div>
+        <Layout title="Curso Tractor - Fotos" description="TODO">
+        <div>Fotos</div>
+    </Layout>
     );
   };
   

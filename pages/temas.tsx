@@ -1,6 +1,10 @@
+import { Layout } from "../components";
+
 const Temas = () => {
   return (
-  <div>Temas</div>
+    <Layout title="Curso Tractor - Temas" description="TODO">
+      <div>Temas</div>
+    </Layout>
   );
 };
 
