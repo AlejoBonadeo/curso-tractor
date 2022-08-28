@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { useRouter } from "next/router";
 import {
   Box,
-  // Divider,
   Drawer,
   List,
   ListItem,
@@ -26,7 +25,9 @@ export const Sidebar = () => {
   const { isSideBarOpen, toggleSideBar } = useContext(UiContext);
 
   const navigateTo = (url: string) => {
-    router.push(url);
+    if (url.includes("http")) window.open(url);
+    else router.push(url);
+
     toggleSideBar();
   };
 
@@ -40,7 +41,7 @@ export const Sidebar = () => {
           bgcolor: "#4993ba",
           borderTopLeftRadius: 50,
           borderBottomLeftRadius: 50,
-          height: 'fit-content',
+          height: "fit-content",
         },
       }}
       onClose={toggleSideBar}
@@ -53,43 +54,47 @@ export const Sidebar = () => {
             </ListItemIcon>
             <ListItemText primary="Temas" />
           </ListItem>
-          {/* <Divider color="white" /> */}
           <ListItem button onClick={() => navigateTo("/jornada")}>
             <ListItemIcon>
               <AgricultureOutlined sx={{ color: "white" }} />
             </ListItemIcon>
             <ListItemText primary="Jornada" />
           </ListItem>
-          {/* <Divider color="white" /> */}
           <ListItem button onClick={() => navigateTo("/referencias")}>
             <ListItemIcon>
               <BusinessOutlined sx={{ color: "white" }} />
             </ListItemIcon>
             <ListItemText primary="Referencias" />
           </ListItem>
-          {/* <Divider color="white" /> */}
           <ListItem button onClick={() => navigateTo("/fotos")}>
             <ListItemIcon>
               <PhotoLibraryOutlined sx={{ color: "white" }} />
             </ListItemIcon>
             <ListItemText primary="Fotos" />
           </ListItem>
-          {/* <Divider color="white" /> */}
           <ListItem button onClick={() => navigateTo("/videos")}>
             <ListItemIcon>
               <VideoLibraryOutlined sx={{ color: "white" }} />
             </ListItemIcon>
             <ListItemText primary="Videos" />
           </ListItem>
-          {/* <Divider color="white" /> */}
-          <ListItem button onClick={() => navigateTo("#")}>
+          <ListItem
+            button
+            onClick={() =>
+              navigateTo("https://es-la.facebook.com/cursotractor/")
+            }
+          >
             <ListItemIcon>
               <FacebookOutlined sx={{ color: "white" }} />
             </ListItemIcon>
             <ListItemText primary="Facebook" />
           </ListItem>
-          {/* <Divider color="white" /> */}
-          <ListItem button onClick={() => navigateTo("#")}>
+          <ListItem
+            button
+            onClick={() =>
+              navigateTo("https://www.instagram.com/cursotractor/")
+            }
+          >
             <ListItemIcon>
               <Instagram sx={{ color: "white" }} />
             </ListItemIcon>

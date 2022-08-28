@@ -20,7 +20,13 @@ export const NavBar = () => {
   return (
     <AppBar>
       <Toolbar sx={{ bgcolor: "#4993ba" }}>
-        <Typography color="white" fontWeight="bold" fontSize="1.5em">
+        <Typography
+          color="white"
+          fontWeight="bold"
+          fontSize="1.5em"
+          sx={{ cursor: "pointer" }}
+          onClick={() => router.push("/")}
+        >
           Curso Tractor
         </Typography>
         <Box
@@ -31,7 +37,7 @@ export const NavBar = () => {
           <NextLink href="/temas" passHref>
             <Link
               fontSize="1.2em"
-              color={router.asPath !== 'temas' ? 'info.main' : 'primary.dark'}
+              color={router.asPath !== "temas" ? "info.main" : "primary.dark"}
             >
               Temas
             </Link>
@@ -39,7 +45,7 @@ export const NavBar = () => {
           <NextLink href="/jornada" passHref>
             <Link
               fontSize="1.2em"
-              color={router.asPath !== 'jornada' ? 'info.main' : 'primary.dark'}
+              color={router.asPath !== "jornada" ? "info.main" : "primary.dark"}
             >
               Jornada
             </Link>
@@ -47,7 +53,9 @@ export const NavBar = () => {
           <NextLink href="/referencias" passHref>
             <Link
               fontSize="1.2em"
-              color={router.asPath !== 'referencias' ? 'info.main' : 'primary.dark'}
+              color={
+                router.asPath !== "referencias" ? "info.main" : "primary.dark"
+              }
             >
               Referencias
             </Link>
@@ -55,7 +63,7 @@ export const NavBar = () => {
           <NextLink href="/fotos" passHref>
             <Link
               fontSize="1.2em"
-              color={router.asPath !== 'fotos' ? 'info.main' : 'primary.dark'}
+              color={router.asPath !== "fotos" ? "info.main" : "primary.dark"}
             >
               Fotos
             </Link>
@@ -63,7 +71,7 @@ export const NavBar = () => {
           <NextLink href="/videos" passHref>
             <Link
               fontSize="1.2em"
-              color={router.asPath !== 'videos' ? 'info.main' : 'primary.dark'}
+              color={router.asPath !== "videos" ? "info.main" : "primary.dark"}
             >
               Videos
             </Link>
@@ -77,15 +85,23 @@ export const NavBar = () => {
         >
           <MenuOutlined sx={{ color: "#fff" }} />
         </IconButton>
-        <NextLink href="#" passHref>
-          <Link sx={{ display: { xs: "none", md: "block" } }}>
+        <NextLink
+          href="https://es-la.facebook.com/cursotractor/"
+          passHref
+          target="_blank"
+        >
+          <Link sx={{ display: { xs: "none", md: "block" } }} target="_blank">
             <IconButton size="large">
               <FacebookOutlined sx={{ color: "#fff" }} />
             </IconButton>
           </Link>
         </NextLink>
-        <NextLink href="#" passHref>
-          <Link sx={{ display: { xs: "none", md: "block" } }}>
+        <NextLink
+          href="https://www.instagram.com/cursotractor/"
+          passHref
+          target="_blank"
+        >
+          <Link sx={{ display: { xs: "none", md: "block" } }} target="_blank">
             <IconButton size="large">
               <Instagram sx={{ color: "#fff" }} />
             </IconButton>

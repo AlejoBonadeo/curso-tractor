@@ -20,31 +20,39 @@ const Home = () => {
         top={-10}
         mt={{ xs: "5vh", md: 0 }}
       >
-        <Button
-          endIcon={<ChevronRightOutlined />}
-          size="large"
-          sx={{
-            fontSize: { xs: "1em", sm: "1.5em" },
-            mx: { xs: 0, md: 2 },
-            my: { xs: 1, md: 0 },
-            width: { xs: "100%", md: "fit-content" },
-          }}
-        >
-          Ver Temas
-        </Button>
-        <Button
-          endIcon={<ChevronRightOutlined />}
-          size="large"
-          sx={{
-            fontSize: { xs: "1em", sm: "1.5em" },
-            mx: { xs: 0, md: 2 },
-            my: { xs: 1, md: 0 },
-            width: { xs: "100%", md: "fit-content" },
-          }}
-          variant="outlined"
-        >
-          Ver Jornada
-        </Button>
+        <NextLink href="/temas" passHref>
+          <Link>
+            <Button
+              endIcon={<ChevronRightOutlined />}
+              size="large"
+              sx={{
+                fontSize: { xs: "1em", sm: "1.5em" },
+                mx: { xs: 0, md: 2 },
+                my: { xs: 1, md: 0 },
+                width: { xs: "100%", md: "fit-content" },
+              }}
+            >
+              Ver Temas
+            </Button>
+          </Link>
+        </NextLink>
+        <NextLink href="/jornada" passHref>
+          <Link>
+            <Button
+              endIcon={<ChevronRightOutlined />}
+              size="large"
+              sx={{
+                fontSize: { xs: "1em", sm: "1.5em" },
+                mx: { xs: 0, md: 2 },
+                my: { xs: 1, md: 0 },
+                width: { xs: "100%", md: "fit-content" },
+              }}
+              variant="outlined"
+            >
+              Ver Jornada
+            </Button>
+          </Link>
+        </NextLink>
         <Button
           endIcon={<WhatsApp />}
           size="large"
