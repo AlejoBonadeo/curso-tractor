@@ -22,7 +22,7 @@ const slideImages = [
 
 export const SlideShow = () => {
   return (
-    <Box px={{ xs: 0, md: "20vw" }} mt={{ xs: '10vh', sm: '5vh', md: 3 }}>
+    <Box px={{ xs: 0, md: "20vw" }} mt={{ xs: '10vh', sm: '5vh' }}>
       <Slide arrows={false}>
         {slideImages.map(({ url, description }, index) => (
           <Box
