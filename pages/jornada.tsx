@@ -1,7 +1,7 @@
 import { ChevronRightOutlined, WhatsApp } from "@mui/icons-material";
 import { Box, Button, Grid, Link, Typography } from "@mui/material";
 import { Layout, CustomCard } from "../components";
-import NextLink from 'next/link';
+import NextLink from "next/link";
 
 const Jornada = () => {
   return (
@@ -44,23 +44,21 @@ const Jornada = () => {
         flexDirection={{ xs: "column", md: "row" }}
         justifyContent="center"
         alignItems="center"
-        mt={{ xs: "5vh", md: '30vh' }}
+        mt={{ xs: "5vh", md: "30vh" }}
       >
         <NextLink href="/temas" passHref>
-          <Link>
-            <Button
-              endIcon={<ChevronRightOutlined />}
-              size="large"
-              sx={{
-                fontSize: { xs: "1em", sm: "1.5em" },
-                mx: { xs: 0, md: 2 },
-                my: { xs: 1, md: 0 },
-                width: { xs: "100%", md: "fit-content" },
-              }}
-            >
-              Ver Temas
-            </Button>
-          </Link>
+          <Button
+            endIcon={<ChevronRightOutlined />}
+            size="large"
+            sx={{
+              fontSize: { xs: "1em", sm: "1.5em" },
+              mx: { xs: 0, md: 2 },
+              my: { xs: 1, md: 0 },
+              width: { xs: "100%", md: "fit-content" },
+            }}
+          >
+            Ver Temas
+          </Button>
         </NextLink>
         <Button
           endIcon={<WhatsApp />}

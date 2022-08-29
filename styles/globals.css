@@ -5,19 +5,6 @@ body {
   font-family: 'Roboto'
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-
-}
-
-.pepito {
-  color: purple;
 }
