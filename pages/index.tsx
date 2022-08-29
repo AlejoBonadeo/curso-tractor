@@ -1,12 +1,12 @@
 import NextLink from "next/link";
-import { Box, Button, Link, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { ChevronRightOutlined, WhatsApp } from "@mui/icons-material";
 import { SlideShow, Layout } from "../components";
 
 const Home = () => {
   return (
     <Layout title="Curso Tractor" description="Aprende de tractores o algo asi">
-      <Typography variant="h3" component="h1" mt={{xs: '5vh', md: 0}}>
+      <Typography variant="h3" component="h1" mt={{ xs: "5vh", md: 0 }}>
         Curso Tractor
       </Typography>
       <SlideShow />
@@ -21,37 +21,33 @@ const Home = () => {
         mt={{ xs: "5vh", md: 0 }}
       >
         <NextLink href="/temas" passHref>
-          <Link>
-            <Button
-              endIcon={<ChevronRightOutlined />}
-              size="large"
-              sx={{
-                fontSize: { xs: "1em", sm: "1.5em" },
-                mx: { xs: 0, md: 2 },
-                my: { xs: 1, md: 0 },
-                width: { xs: "100%", md: "fit-content" },
-              }}
-            >
-              Ver Temas
-            </Button>
-          </Link>
+          <Button
+            endIcon={<ChevronRightOutlined />}
+            size="large"
+            sx={{
+              fontSize: { xs: "1em", sm: "1.5em" },
+              mx: { xs: 0, md: 2 },
+              my: { xs: 1, md: 0 },
+              width: { xs: "100%", md: "fit-content" },
+            }}
+          >
+            Ver Temas
+          </Button>
         </NextLink>
         <NextLink href="/jornada" passHref>
-          <Link>
-            <Button
-              endIcon={<ChevronRightOutlined />}
-              size="large"
-              sx={{
-                fontSize: { xs: "1em", sm: "1.5em" },
-                mx: { xs: 0, md: 2 },
-                my: { xs: 1, md: 0 },
-                width: { xs: "100%", md: "fit-content" },
-              }}
-              variant="outlined"
-            >
-              Ver Jornada
-            </Button>
-          </Link>
+          <Button
+            endIcon={<ChevronRightOutlined />}
+            size="large"
+            sx={{
+              fontSize: { xs: "1em", sm: "1.5em" },
+              mx: { xs: 0, md: 2 },
+              my: { xs: 1, md: 0 },
+              width: { xs: "100%", md: "fit-content" },
+            }}
+            variant="outlined"
+          >
+            Ver Jornada
+          </Button>
         </NextLink>
         <Button
           endIcon={<WhatsApp />}
