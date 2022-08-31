@@ -9,56 +9,61 @@ const Fotos = () => {
     return (
         <Layout title="Curso Tractor - Fotos" description="TODO">
 
-  <div style={{ backgroundColor: "#C5E5F5",
-    width:'100vw',
-    height: '100vh', }}>
- <Typography variant="h3" component="h1">
+  <div style={{ backgroundColor: "#C5E5F5"}}>
+ <Typography variant="h3" component="h1" style={{
+padding:'20px'}}>
        Fotos
       </Typography>
       <div style={{
-    width:'100vw',
     height: '100vh', 
     display:'flex',
     flexWrap: 'wrap',
-    gap: '2rem',
-    rowGap: '3rem',
+    rowGap: '5rem',
+    columnGap:'3rem',
     alignContent: 'flex-start',
     justifyContent:'space-around',
-    marginTop:'50px'}}>
+    marginTop:'50px',
+    padding: '20px'}}>
 
 <div style={{backgroundColor:'white',
 width:'25%',
-height:'30%'}}> 
+height:'30%',
+borderRadius:'50px'}}> 
 
 </div>
 
 <div style={{backgroundColor:'white',
 width:'25%',
-height:'30%'}}> 
+height:'30%',
+borderRadius:'50px'}}> 
 
 </div>
 
 <div style={{backgroundColor:'white',
 width:'25%',
-height:'30%'}}> 
+height:'30%',
+borderRadius:'50px'}}> 
 
 </div>
 
 <div style={{backgroundColor:'white',
 width:'25%',
-height:'30%'}}> 
+height:'30%',
+borderRadius:'50px'}}> 
 
 </div>
 
 <div style={{backgroundColor:'white',
 width:'25%',
-height:'30%'}}> 
+height:'30%',
+borderRadius:'50px'}}> 
 
 </div>
 
 <div style={{backgroundColor:'white',
 width:'25%',
-height:'30%'}}> 
+height:'30%',
+borderRadius:'50px'}}> 
 
 </div>
 

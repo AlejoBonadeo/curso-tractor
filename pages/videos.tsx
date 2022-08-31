@@ -7,8 +7,7 @@ const Videos = () => {
 <div style={{ backgroundColor: "#C5E5F5"
 }}>
  <Typography variant="h3" component="h1" style={{
-    width:'100%',
-    textAlign: 'right'}}>
+    width:'100%'}}>
        Videos
       </Typography>
       <div style={{
@@ -18,8 +17,8 @@ const Videos = () => {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 4fr)',
     gridTemplateRows: 'repeat(5, 3fr)',
-    gridColumnGap: '1rem;',
-    gridRowGap: '1rem',
+    gap:"3fr",
+    columnGap:'3rem',
     padding:'20px'}}>
 
 <div style={{backgroundColor:'white',
