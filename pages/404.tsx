@@ -23,7 +23,7 @@ const Error404 = () => {
 <AgricultureIcon style={{fontSize:'100px',
 marginBottom:"10px"}}></AgricultureIcon>
         <p style={{fontWeight:"bold",
-      marginBottom:"30px"}}> Parece que la página seleccionada no existe </p>
+      marginBottom:"30px"}}> Parece que la página que buscas no existe </p>
         <NextLink href="/index" passHref>
           <Button
             endIcon={<ChevronRightOutlined />}
