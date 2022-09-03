@@ -22,7 +22,7 @@ const slideImages = [
 
 export const SlideShow = () => {
   return (
-    <Box px={{ xs: 0, md: "20vw" }} mt={{ xs: '10vh', sm: '5vh' }}>
+    <Box px={{ xs: 0, md: "20vw", xl: "10vw" }} mt={{ xs: "10vh", sm: "5vh" }}>
       <Slide arrows={false}>
         {slideImages.map(({ url, description }, index) => (
           <Box
@@ -32,7 +32,6 @@ export const SlideShow = () => {
             padding="34.37%"
             maxWidth="100%"
             height="auto"
-            
           >
             <Box
               component="img"
@@ -58,7 +57,7 @@ export const SlideShow = () => {
                 variant="body1"
                 component="p"
                 color="white"
-                fontSize={{ xs: ".75em", sm:'1em', md: "1.2em", lg: '2em' }}
+                fontSize={{ xs: ".75em", sm: "1em", md: "1.2em", lg: "2em" }}
                 ml="2%"
                 boxSizing="border-box"
               >
