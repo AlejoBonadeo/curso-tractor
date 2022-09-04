@@ -1,7 +1,8 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useRouter } from "next/router";
 import {
   Box,
+  Collapse,
   Drawer,
   List,
   ListItem,
@@ -15,11 +16,15 @@ import {
   PhotoLibraryOutlined,
   VideoLibraryOutlined,
   FacebookOutlined,
+  ExpandMoreOutlined,
+  ExpandLessOutlined,
 } from "@mui/icons-material";
 import { UiContext } from "../../context";
 import { Instagram } from "@mui/icons-material";
 
 export const Sidebar = () => {
+  const [open, setOpen] = useState(false);
+
   const router = useRouter();
 
   const { isSideBarOpen, toggleSideBar } = useContext(UiContext);
@@ -72,12 +77,35 @@ export const Sidebar = () => {
             </ListItemIcon>
             <ListItemText primary="Fotos" />
           </ListItem>
-          <ListItem button onClick={() => navigateTo("/videos")}>
+          <ListItem button onClick={() => setOpen(!open)}>
             <ListItemIcon>
               <VideoLibraryOutlined sx={{ color: "white" }} />
             </ListItemIcon>
             <ListItemText primary="Videos" />
+            {open ? <ExpandLessOutlined /> : <ExpandMoreOutlined />}
           </ListItem>
+          <Collapse in={open} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/videos/capacitaciones')}>
+                <ListItemIcon>
+                  <AgricultureOutlined sx={{ color: 'white' }} />
+                </ListItemIcon>
+                <ListItemText primary="Capacitaciones" />
+              </ListItem>
+              <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/videos/demostraciones')}>
+                <ListItemIcon>
+                  <AgricultureOutlined sx={{ color: 'white' }} />
+                </ListItemIcon>
+                <ListItemText primary="Demostraciones" />
+              </ListItem>
+              <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/videos/tecnicos')}>
+                <ListItemIcon>
+                  <AgricultureOutlined sx={{ color: 'white' }} />
+                </ListItemIcon>
+                <ListItemText primary="Técnicos" />
+              </ListItem>
+            </List>
+          </Collapse>
           <ListItem
             button
             onClick={() =>
