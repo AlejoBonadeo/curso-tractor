@@ -168,19 +168,19 @@ export const NavBar = () => {
           transformOrigin={{ horizontal: "right", vertical: "top" }}
           anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
         >
-          <MenuItem onClick={() => router.push("/videos/")} sx={{ py: 2 }}>
+          <MenuItem onClick={() => router.push("/videos/capacitaciones")} sx={{ py: 2 }}>
             <ListItemIcon>
               <AgricultureOutlined fontSize="small" />
             </ListItemIcon>
             Capacitaciones
           </MenuItem>
-          <MenuItem onClick={() => router.push("/videos/")} sx={{ py: 2 }}>
+          <MenuItem onClick={() => router.push("/videos/demostraciones")} sx={{ py: 2 }}>
             <ListItemIcon>
               <AgricultureOutlined fontSize="small" />
             </ListItemIcon>
             Demostraciones
           </MenuItem>
-          <MenuItem onClick={() => router.push("/videos/")} sx={{ py: 2 }}>
+          <MenuItem onClick={() => router.push("/videos/tecnicos")} sx={{ py: 2 }}>
             <ListItemIcon>
               <AgricultureOutlined fontSize="small" />
             </ListItemIcon>
