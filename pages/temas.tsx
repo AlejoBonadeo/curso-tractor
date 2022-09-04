@@ -77,7 +77,7 @@ const Temas = () => {
             bgcolor: "#25D366",
           }}
         >
-          Inscribite
+          Contactanos
         </Button>
       </Box>
     </Layout>
