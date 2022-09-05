@@ -65,12 +65,12 @@ export const SlideShow = () => {
                 variant="body1"
                 component="p"
                 color="white"
-                fontSize={{ xs: ".75em", sm: "1em", md: "1.2em", lg: "3em" }}
+                fontSize={{ xs: "1em", sm: "1.5em", lg: "2.5em", xl: '3em' }}
                 boxSizing="border-box"
                 textAlign="center"
                 mt={{xs: 7, md: 14}}
                 fontWeight="bold"
-                px={10}
+                px={{xs: 3, md: 10}}
 
               >
                 {description}
