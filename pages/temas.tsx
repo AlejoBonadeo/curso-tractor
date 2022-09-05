@@ -1,8 +1,29 @@
-import { display } from "@mui/system";
 import { Layout, CustomCard } from "../components";
 import { ChevronRightOutlined, WhatsApp } from "@mui/icons-material";
-import { Box, Button, Grid, Link, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import NextLink from "next/link";
+import { Image } from "../interfaces";
+
+const images: Image[] = [
+  {
+    title: "Seguridad",
+    description:
+      "Diferenciar un accidente de una falta de prevención (incidente)\nLa causas de estos siempre son el apuro o subestimar los riesgos (canchereada o negligencia pocas veces) se trabaja con eso.\nLa prevención son solo unos minutos, pero esenciales.",
+    image: "/curso-tractor/images/a2.png",
+  },
+  {
+    title: "Uso y Manejo",
+    description:
+      "Instrumentos: que indican y su importancia\nComandos: cuando y como se usan, trabajos eficientes cuidando los componentes que se le puede pedir a un tractor y cuales son sus limites\nNociones de fuerza del motor, lastrado y patinaje para la diaria, evitando los tecnicismos.",
+    image: "/curso-tractor/images/m13.png",
+  },
+  {
+    title: "Mantenimiento",
+    description:
+      "Funcionamiento de los sistemas de tractor para entender su conservación\nComo realizar el mantenimiento de los componentes, promoviendo el conocimiento de cada uno sobre su máquina para no dejar temas sin resolver una vez encaminado el servicio.\nAjustes y regulaciones para prevenir desgastes.",
+    image: "/curso-tractor/images/m31.jpg",
+  },
+];
 
 const Temas = () => {
   return (
@@ -14,35 +35,11 @@ const Temas = () => {
         Temas
       </Typography>
       <Grid container mt={3} spacing={2}>
-        <Grid item xs={12} md={4}>
-          <CustomCard
-            title="Tema 1"
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec mauris id felis commodo hendrerit. Pellentesque aliquet magna nec diam cursus consectetur. Nam tellus tortor, fermentum sit amet libero eu, fermentum volutpat nulla. Cras scelerisque varius risus quis volutpat. Praesent et vulputate libero. In vulputate augue et purus cursus ultrices. Duis malesuada risus ipsum, eget pretium mauris fermentum ut. Sed vulputate ipsum nibh, vitae cursus turpis lacinia eget."
-            }
-            image="https://cnnespanol.cnn.com/wp-content/uploads/2022/01/220107141734-tractor-inteligente-full-169.jpg?quality=100&strip=info"
-          />
-        </Grid>
-
-        <Grid item xs={12} md={4}>
-          <CustomCard
-            title="Tema 2"
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec mauris id felis commodo hendrerit. Pellentesque aliquet magna nec diam cursus consectetur. Nam tellus tortor, fermentum sit amet libero eu, fermentum volutpat nulla. Cras scelerisque varius risus quis volutpat. Praesent et vulputate libero. In vulputate augue et purus cursus ultrices. Duis malesuada risus ipsum, eget pretium mauris fermentum ut. Sed vulputate ipsum nibh, vitae cursus turpis lacinia eget."
-            }
-            image="https://cnnespanol.cnn.com/wp-content/uploads/2022/01/220107141734-tractor-inteligente-full-169.jpg?quality=100&strip=info"
-          />
-        </Grid>
-
-        <Grid item xs={12} md={4}>
-          <CustomCard
-            title="Tema 3"
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec mauris id felis commodo hendrerit. Pellentesque aliquet magna nec diam cursus consectetur. Nam tellus tortor, fermentum sit amet libero eu, fermentum volutpat nulla. Cras scelerisque varius risus quis volutpat. Praesent et vulputate libero. In vulputate augue et purus cursus ultrices. Duis malesuada risus ipsum, eget pretium mauris fermentum ut. Sed vulputate ipsum nibh, vitae cursus turpis lacinia eget."
-            }
-            image="https://cnnespanol.cnn.com/wp-content/uploads/2022/01/220107141734-tractor-inteligente-full-169.jpg?quality=100&strip=info"
-          />
-        </Grid>
+        {images.map((image) => (
+          <Grid item key={image.image} xs={12} md={4}>
+            <CustomCard {...image} />
+          </Grid>
+        ))}
       </Grid>
       <Box
         width="100%"
@@ -66,19 +63,23 @@ const Temas = () => {
             Ir a Jornada
           </Button>
         </NextLink>
-        <Button
-          endIcon={<WhatsApp />}
-          size="large"
-          sx={{
-            fontSize: { xs: "1em", sm: "1.5em" },
-            mx: { xs: 0, md: 2 },
-            my: { xs: 1, md: 0 },
-            width: { xs: "100%", md: "fit-content" },
-            bgcolor: "#25D366",
-          }}
-        >
-          Contactanos
-        </Button>
+        <NextLink href="https://wa.me/1568200057" passHref target="_blank">
+          <Button
+            endIcon={<WhatsApp />}
+            size="large"
+            sx={{
+              fontSize: { xs: "1em", sm: "1.5em" },
+              mx: { xs: 0, md: 2 },
+              my: { xs: 1, md: 0 },
+              width: { xs: "100%", md: "fit-content" },
+              bgcolor: "#25D366",
+            }}
+            target="_blank"
+            href="https://wa.me/1568200057"
+          >
+            Contactanos
+          </Button>
+        </NextLink>
       </Box>
     </Layout>
   );

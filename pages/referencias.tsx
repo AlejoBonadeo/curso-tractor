@@ -1,21 +1,21 @@
 import { Layout } from "../components";
 import { Box, Button, Grid, Link, Typography } from "@mui/material";
 
-const estiloReferencias ={
-backgroundColor: "#C5E5F5",
-margin: '0',
-width:'100%',
-height: '100%',
-padding: '0'
-}
+const estiloReferencias = {
+  backgroundColor: "#C5E5F5",
+  margin: "0",
+  width: "100%",
+  height: "100%",
+  padding: "0",
+};
 
 const Referencias = () => {
-    return (
-        <Layout title="Curso Tractor - Referencias" description="TODO">
+  return (
+    <Layout title="Curso Tractor - Referencias" description="TODO">
       <div style={estiloReferencias}>
-      <Typography variant="h3" component="h1" mt={{ xs: "5vh", md: 0 }} style={{textAlign:'center'}}>
-        Referencias
-      </Typography>
+        <Typography variant="h3" component="h1" p={2}>
+          Referencias
+        </Typography>
         <ul>
           <li> </li>
           <li> </li>
@@ -39,10 +39,9 @@ const Referencias = () => {
           <li> </li>
           <li> </li>
         </ul>
-         </div>
+      </div>
     </Layout>
-    );
-  };
-  
-  export default Referencias;
-  
+  );
+};
+
+export default Referencias;

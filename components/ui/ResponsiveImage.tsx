@@ -26,7 +26,8 @@ export const ResponsiveImage: FC<Props> = ({
       <Box
         component="img"
         display="block"
-        maxHeight="100%"
+        maxHeight="81%"
+        minWidth="100%"
         maxWidth="100%"
         src={image}
         position="absolute"
@@ -34,6 +35,7 @@ export const ResponsiveImage: FC<Props> = ({
         bottom={0}
         right={0}
         left={0}
+        className="fadeIn"
         {...ImageProps}
       />
     </Box>
