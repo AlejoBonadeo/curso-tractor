@@ -70,7 +70,7 @@ const Jornada = () => {
             Ver Temas
           </Button>
         </NextLink>
-        <NextLink href="https://wa.me/1568200057" passHref target="_blank">
+        <NextLink href="https://api.whatsapp.com/send?phone=5491153404404" passHref target="_blank">
           <Button
             endIcon={<WhatsApp />}
             size="large"
@@ -82,7 +82,7 @@ const Jornada = () => {
               bgcolor: "#25D366",
             }}
             target="_blank"
-            href="https://wa.me/1568200057"
+            href="https://api.whatsapp.com/send?phone=5491153404404"
           >
             Contactanos
           </Button>
