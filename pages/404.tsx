@@ -32,7 +32,7 @@ const Error404 = () => {
         <Typography fontWeight="bold" mb={3}>
           Parece que la página que buscas no existe
         </Typography>
-        <NextLink href="/index" passHref>
+        <NextLink href="/" passHref>
           <Button
             endIcon={<ChevronRightOutlined />}
             size="large"
