@@ -49,7 +49,7 @@ const Temas = () => {
         alignItems="center"
         mt={{ xs: "5vh", md: "15vh" }}
       >
-        <NextLink href="/temas" passHref>
+        <NextLink href="/jornada" passHref>
           <Button
             endIcon={<ChevronRightOutlined />}
             size="large"
