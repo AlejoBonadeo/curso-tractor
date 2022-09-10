@@ -1,7 +1,7 @@
-import { Layout, CustomCard } from "../components";
-import { ChevronRightOutlined, WhatsApp } from "@mui/icons-material";
-import { Box, Button, Grid, Typography } from "@mui/material";
 import NextLink from "next/link";
+import { Box, Button, Grid, Typography } from "@mui/material";
+import { ChevronRightOutlined } from "@mui/icons-material";
+import { Layout, CustomCard, WhatsAppBtn } from "../components";
 import { Image } from "../interfaces";
 
 const images: Image[] = [
@@ -63,23 +63,7 @@ const Temas = () => {
             Ir a Jornada
           </Button>
         </NextLink>
-        <NextLink href="https://api.whatsapp.com/send?phone=5491153404404" passHref target="_blank">
-          <Button
-            endIcon={<WhatsApp />}
-            size="large"
-            sx={{
-              fontSize: { xs: "1em", sm: "1.5em" },
-              mx: { xs: 0, md: 2 },
-              my: { xs: 1, md: 0 },
-              width: { xs: "100%", md: "fit-content" },
-              bgcolor: "#25D366",
-            }}
-            target="_blank"
-            href="https://api.whatsapp.com/send?phone=5491153404404"
-          >
-            Contactanos
-          </Button>
-        </NextLink>
+        <WhatsAppBtn/>
       </Box>
     </Layout>
   );

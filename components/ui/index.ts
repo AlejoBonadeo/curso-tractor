@@ -4,3 +4,4 @@ export * from "./ResponsiveImage";
 export * from "./ResponsiveVideo"
 export * from "./Sidebar";
 export * from "./SlideShow";
+export * from "./WhatsAppBtn";
