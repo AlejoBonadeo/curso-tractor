@@ -1,18 +1,19 @@
 import { Box, BoxProps } from "@mui/material";
-import { FC } from "react";
+import Image from "next/image";
+import { CSSProperties, FC } from "react";
 
 interface Props {
   image: string;
   proportions?: `${number}%`;
   ContainerProps?: BoxProps;
-  ImageProps?: BoxProps;
+  imageStyles?: CSSProperties;
 }
 
 export const ResponsiveImage: FC<Props> = ({
   image,
-  proportions = "34.37%",
+  proportions = "33.333333%",
   ContainerProps,
-  ImageProps,
+  imageStyles,
 }) => {
   return (
     <Box
@@ -23,20 +24,14 @@ export const ResponsiveImage: FC<Props> = ({
       height="auto"
       {...ContainerProps}
     >
-      <Box
-        component="img"
-        display="block"
-        maxHeight="81%"
-        minWidth="100%"
-        maxWidth="100%"
+      <Image
         src={image}
-        position="absolute"
-        top={0}
-        bottom={0}
-        right={0}
-        left={0}
+        alt="Curso Tractor"
+        layout="fill"
+        style={imageStyles}
         className="fadeIn"
-        {...ImageProps}
+        placeholder="blur"
+        blurDataURL={image}
       />
     </Box>
   );

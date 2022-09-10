@@ -16,9 +16,7 @@ const Home = () => {
         flexDirection={{ xs: "column", md: "row" }}
         justifyContent="center"
         alignItems="center"
-        position="relative"
-        top={-10}
-        mt={{ xs: "5vh", md: 0 }}
+        mt={{ xs: "5vh", md: "5vh" }}
       >
         <NextLink href="/temas" passHref>
           <Button

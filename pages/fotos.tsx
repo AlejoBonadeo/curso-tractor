@@ -12,21 +12,6 @@ const images: string[] = [
   "a4.jpg",
   "a5.png",
   "a6.jpg",
-  "g1.png",
-  "g2.png",
-  "g3.png",
-  "g4.png",
-  "g5.png",
-  "g6.png",
-  "g7.jpg",
-  "g8.jpg",
-  "g9.jpg",
-  "g10.jpg",
-  "g11.jpg",
-  "g12.jpg",
-  "g13.jpg",
-  "g14.jpg",
-  "g15.jpg",
   "m1.JPG",
   "m2.png",
   "m3.png",
@@ -64,7 +49,7 @@ const images: string[] = [
   "m36.png",
   "m37.png",
   "m38.png",
-  "m39.JGP",
+  "m39.JPG",
   "m40.jpg",
   "m41.jpg",
   "m42.jpg",
@@ -73,6 +58,21 @@ const images: string[] = [
   "m45.jpg",
   "m50.jpg",
   "m51.jpg",
+  "g1.png",
+  "g2.png",
+  "g3.png",
+  "g4.png",
+  "g5.png",
+  "g6.png",
+  "g7.jpg",
+  "g8.jpg",
+  "g9.jpg",
+  "g10.jpg",
+  "g11.jpg",
+  "g12.jpg",
+  "g13.jpg",
+  "g14.jpg",
+  "g15.jpg",
   "t1.png",
   "t2.png",
   "t3.png",
@@ -94,10 +94,10 @@ const images: string[] = [
 ];
 
 const Fotos = () => {
-  const [modalImage, setModalImage] = useState<string | null>(null);
+  const [modalImage, setModalImage] = useState<string>('');
 
   const close = () => {
-    setModalImage(null);
+    setModalImage('');
   };
 
   return (
@@ -118,7 +118,7 @@ const Fotos = () => {
             >
               <ResponsiveImage
                 image={`/curso-tractor/images/${image}`}
-                ImageProps={{ borderRadius: 5, sx: { cursor: 'pointer'} }}
+                imageStyles={{ borderRadius: '20px', cursor: 'pointer' }}
               />
             </Grid>
           ))}

@@ -15,7 +15,7 @@ const images: Image[] = [
     title: "Modalidad de trabajo",
     description:
       "Una parte es una proyección con imágenes (sin contenidos para leer) y videos de corta duración. Otra parte es parte arriba del tractor para mostrar alguna maniobra y debajo (herramientas en mano), viendo todos los puntos importantes de servicio.",
-    image: "/curso-tractor/images/g9.jpg",
+    image: "/curso-tractor/images/g4.png",
   },
 ];
 

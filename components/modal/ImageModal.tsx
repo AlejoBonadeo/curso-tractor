@@ -17,8 +17,8 @@ export const ImageModal: FC<Props> = ({ image, open, close }) => {
       PaperProps={{ sx: { bgcolor: "transparent", boxShadow: "none" } }}
       maxWidth="md"
     >
-      <DialogContent sx={{ p: 0, bgcolor: "transparent" }}>
-        <ResponsiveImage image={image!} ImageProps={{ borderRadius: 5 }} />
+      <DialogContent sx={{ p: 0, bgcolor: "transparent", overflow: 'hidden' }}>
+        <ResponsiveImage image={image!} imageStyles={{ borderRadius: '40px' }} />
       </DialogContent>
     </Dialog>
   );

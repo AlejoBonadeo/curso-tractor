@@ -14,7 +14,7 @@ export const CustomCard: FC<Props> = ({ image, title, description }) => {
       <CardMedia component="div" sx={{ width: "100%" }}>
         <ResponsiveImage image={image} />
       </CardMedia>
-      <CardContent sx={{ position: "relative", bottom: {xs: 30, sm: 50} }}>
+      <CardContent>
         <Typography gutterBottom variant="h5" component="h5">
           {title}
         </Typography>

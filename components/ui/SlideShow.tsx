@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import Image from "next/image";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
@@ -11,7 +12,7 @@ const slideImages = [
   {
     url: "/curso-tractor/images/a1.png",
     description:
-      "Se trabaja concientizando en un clima ameno con palabras simples, para lograr inmediato cambio de actitud con los equipos.",
+      "Se trabaja con las personas, sus conocimientos y costumbres, para lograr inmediato cambio de actitud con los equipos.",
   },
   {
     url: "/curso-tractor/images/g9.jpg",
@@ -29,30 +30,23 @@ export const SlideShow = () => {
             key={index}
             position="relative"
             overflow="hidden"
-            padding="34.37%"
+            padding="30%"
             maxWidth="100%"
-            height="auto"
             borderRadius={5}
-            >
-            <Box
-              component="img"
-              display="block"
-              maxHeight="81%"
-              minWidth="100%"
-              maxWidth="100%"
+          >
+            <Image
               src={url}
-              position="absolute"
-              zIndex={-1}
-              top={0}
-              bottom={0}
-              right={0}
-              left={0}
-              borderRadius={5}
+              alt="Curso Tractor"
+              layout="fill"
+              style={{ borderRadius: "20px" }}
+              className="fadeIn"
+              placeholder="blur"
+              blurDataURL={url}
             />
             <Box
               position="absolute"
               left="0%"
-              bottom="18.8%"
+              bottom="0%"
               height="100%"
               width="100%"
               bgcolor="rgba(0, 0, 0, .4)"
@@ -65,13 +59,11 @@ export const SlideShow = () => {
                 variant="body1"
                 component="p"
                 color="white"
-                fontSize={{ xs: "1em", sm: "1.5em", lg: "2.5em", xl: '3em' }}
+                fontSize={{ xs: "1em", sm: "1.5em", lg: "2.5em", xl: "3em" }}
                 boxSizing="border-box"
                 textAlign="center"
-                mt={{xs: 7, md: 14}}
                 fontWeight="bold"
-                px={{xs: 3, md: 10}}
-
+                px={{ xs: 3, md: 10 }}
               >
                 {description}
               </Typography>
