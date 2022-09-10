@@ -6,7 +6,6 @@ import { Sidebar } from "../ui/Sidebar";
 interface Props {
   title: string;
   description: string;
-  imageUrl?: string;
   children: ReactNode;
 }
 
@@ -14,7 +13,6 @@ export const Layout: FC<Props> = ({
   children,
   title,
   description,
-  imageUrl,
 }) => {
   return (
     <>
@@ -23,7 +21,7 @@ export const Layout: FC<Props> = ({
         <meta name="description" content={description} />
         <meta name="og:title" content={title} />
         <meta name="og:description" content={description} />
-        {imageUrl && <meta name="og:image" content={imageUrl} />}
+        <meta name="og:image" content="/curso-tractor/images/m34.JPG" />
       </Head>
       <nav>
         <NavBar />

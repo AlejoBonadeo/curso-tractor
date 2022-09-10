@@ -101,7 +101,7 @@ const Fotos = () => {
   };
 
   return (
-    <Layout title="Curso Tractor - Fotos" description="TODO">
+    <Layout title="Curso Tractor - Fotos" description="Fotos de todo lo relacionado al curso">
       <Box bgcolor="primary.light">
         <Typography variant="h3" component="h1" p={2}>
           Fotos

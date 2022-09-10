@@ -5,7 +5,10 @@ import { SlideShow, Layout, WhatsAppBtn } from "../components";
 
 const Home = () => {
   return (
-    <Layout title="Curso Tractor" description="Aprende de tractores o algo asi">
+    <Layout
+      title="Curso Tractor"
+      description="La capacitación fue desarrollada para evitar las roturas en la maquinaria, Aportando a las personas pautas claras para el oficio."
+    >
       <Typography variant="h3" component="h1" mt={{ xs: "5vh", md: 0 }}>
         Curso Tractor
       </Typography>
@@ -47,7 +50,7 @@ const Home = () => {
             Ver Jornada
           </Button>
         </NextLink>
-        <WhatsAppBtn/>
+        <WhatsAppBtn />
       </Box>
     </Layout>
   );

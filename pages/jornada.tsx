@@ -23,7 +23,7 @@ const Jornada = () => {
   return (
     <Layout
       title="Curso Tractor - Jornada"
-      description="Aprende de tractores o algo asi"
+      description="Información sobre la jornada del curso"
     >
       <Typography variant="h3" component="h1">
         Desarrollo de la jornada

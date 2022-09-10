@@ -29,7 +29,7 @@ const Temas = () => {
   return (
     <Layout
       title="Curso Tractor - Temas"
-      description="Temas a tratar en la jornada del curso"
+      description="Información sobre los temas del curso"
     >
       <Typography variant="h3" component="h1">
         Temas

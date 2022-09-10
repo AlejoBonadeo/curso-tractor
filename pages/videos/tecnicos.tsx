@@ -18,7 +18,7 @@ const videos: Video[] = [
 
 const Videos = () => {
   return (
-    <Layout title="Curso Tractor - Videos" description="TODO">
+    <Layout title="Curso Tractor - Videos" description="Videos Técnicos">
       <VideoPage title="Videos Técnicos" videos={videos} />
     </Layout>
   );

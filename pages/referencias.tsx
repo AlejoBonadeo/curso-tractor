@@ -11,7 +11,7 @@ const estiloReferencias = {
 
 const Referencias = () => {
   return (
-    <Layout title="Curso Tractor - Referencias" description="TODO">
+    <Layout title="Curso Tractor - Referencias" description="Referencias">
       <div style={estiloReferencias}>
         <Typography variant="h3" component="h1" p={2}>
           Referencias
