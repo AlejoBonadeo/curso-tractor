@@ -7,8 +7,6 @@ import {
   IconButton,
   Menu,
   MenuItem,
-  Avatar,
-  Divider,
   ListItemIcon,
 } from "@mui/material";
 import { useRouter } from "next/router";
@@ -17,11 +15,7 @@ import {
   FacebookOutlined,
   Instagram,
   KeyboardArrowDownOutlined,
-  Logout,
   MenuOutlined,
-  PersonAdd,
-  Settings,
-  StarBorderOutlined,
 } from "@mui/icons-material";
 import { useContext, useState } from "react";
 import { UiContext } from "../../context";
@@ -44,7 +38,7 @@ export const NavBar = () => {
 
   return (
     <AppBar>
-      <Toolbar sx={{ bgcolor: "#4993ba" }}>
+      <Toolbar sx={{ bgcolor: "primary.main" }}>
         <Typography
           color="white"
           fontWeight="bold"
@@ -107,6 +101,7 @@ export const NavBar = () => {
               justifyContent: "center",
               cursor: "pointer",
             }}
+            href="#"
           >
             Videos
             <KeyboardArrowDownOutlined />
@@ -117,6 +112,7 @@ export const NavBar = () => {
           sx={{ display: { xs: "block", md: "none" } }}
           size="large"
           onClick={toggleSideBar}
+          aria-label="Menu"
         >
           <MenuOutlined sx={{ color: "#fff" }} />
         </IconButton>
@@ -126,7 +122,7 @@ export const NavBar = () => {
           target="_blank"
         >
           <Link sx={{ display: { xs: "none", md: "block" } }} target="_blank">
-            <IconButton size="large">
+            <IconButton size="large" aria-label="Facebook">
               <FacebookOutlined sx={{ color: "#fff" }} />
             </IconButton>
           </Link>
@@ -137,7 +133,7 @@ export const NavBar = () => {
           target="_blank"
         >
           <Link sx={{ display: { xs: "none", md: "block" } }} target="_blank">
-            <IconButton size="large">
+            <IconButton size="large" aria-label="Instagram">
               <Instagram sx={{ color: "#fff" }} />
             </IconButton>
           </Link>

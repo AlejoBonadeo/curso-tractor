@@ -43,7 +43,7 @@ export const Sidebar = () => {
       sx={{ backdropFilter: "blur(5px)", transition: "all 0.5s ease-in-out" }}
       PaperProps={{
         sx: {
-          bgcolor: "#4993ba",
+          bgcolor: "primary.main",
           borderTopLeftRadius: 50,
           borderBottomLeftRadius: 50,
           height: "fit-content",
