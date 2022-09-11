@@ -1,45 +1,51 @@
+import {
+  Box,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Typography,
+} from "@mui/material";
 import { Layout } from "../components";
-import { Box, Button, Grid, Link, Typography } from "@mui/material";
-
-const estiloReferencias = {
-  backgroundColor: "#C5E5F5",
-  margin: "0",
-  width: "100%",
-  height: "100%",
-  padding: "0",
-};
+import { referencias } from "../data";
 
 const Referencias = () => {
   return (
     <Layout title="Curso Tractor - Referencias" description="Referencias">
-      <div style={estiloReferencias}>
+      <Box bgcolor="primary.light" width="100%">
         <Typography variant="h3" component="h1" p={2}>
           Referencias
         </Typography>
-        <ul>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-          <li> </li>
-        </ul>
-      </div>
+        <TableContainer
+          component={Paper}
+          sx={{ px: { xs: 2, md: 10 }, bgcolor: "transparent" }}
+        >
+          <Table aria-label="tabla-de-referencias">
+            <TableHead>
+              <TableRow>
+                <TableCell sx={{ fontWeight: "bold" }}>Empresa</TableCell>
+                <TableCell sx={{ fontWeight: "bold" }}>Localidad</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {referencias.map((row) => (
+                <TableRow
+                  key={row.EMPRESA}
+                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                >
+                  <TableCell component="th" scope="row">
+                    {row.EMPRESA}
+                  </TableCell>
+                  <TableCell>{row.LOCALIDAD}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </Box>
     </Layout>
   );
 };
