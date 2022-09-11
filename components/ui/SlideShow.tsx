@@ -15,7 +15,7 @@ const slideImages = [
       "Se trabaja con las personas, sus conocimientos y costumbres, para lograr inmediato cambio de actitud con los equipos.",
   },
   {
-    url: "/curso-tractor/images/g9.jpg",
+    url: "/curso-tractor/images/t10.jpg",
     description:
       "No todas las personas tienen experiencia, pero de todas se espera eficiencia, la capacitación es el camino más económico.",
   },

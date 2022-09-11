@@ -6,7 +6,6 @@ const templateImgUrl =
   "https://cnnespanol.cnn.com/wp-content/uploads/2022/01/220107141734-tractor-inteligente-full-169.jpg?quality=100&strip=info";
 
 const images: string[] = [
-  "a1.png",
   "a2.png",
   "a3.png",
   "a4.jpg",
@@ -44,7 +43,6 @@ const images: string[] = [
   "m31.jpg",
   "m32.JPG",
   "m33.JPG",
-  "m34.JPG",
   "m35.jpg",
   "m36.png",
   "m37.png",
@@ -82,7 +80,6 @@ const images: string[] = [
   "t7.png",
   "t8.png",
   "t9.jpg",
-  "t10.jpg",
   "t10.png",
   "t11.png",
   "t12.png",
