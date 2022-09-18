@@ -77,47 +77,6 @@ export const Sidebar = () => {
             </ListItemIcon>
             <ListItemText primary="Fotos" />
           </ListItem>
-          <ListItem button onClick={() => setOpen(!open)}>
-            <ListItemIcon>
-              <VideoLibraryOutlined sx={{ color: "white" }} />
-            </ListItemIcon>
-            <ListItemText primary="Videos" />
-            {open ? <ExpandLessOutlined /> : <ExpandMoreOutlined />}
-          </ListItem>
-          <Collapse in={open} timeout="auto" unmountOnExit>
-            <List component="div" disablePadding>
-              <ListItem
-                button
-                sx={{ pl: 4 }}
-                onClick={() => navigateTo("/videos/capacitaciones")}
-              >
-                <ListItemIcon>
-                  <AgricultureOutlined sx={{ color: "white" }} />
-                </ListItemIcon>
-                <ListItemText primary="Capacitaciones" />
-              </ListItem>
-              <ListItem
-                button
-                sx={{ pl: 4 }}
-                onClick={() => navigateTo("/videos/demostraciones")}
-              >
-                <ListItemIcon>
-                  <AgricultureOutlined sx={{ color: "white" }} />
-                </ListItemIcon>
-                <ListItemText primary="Demostraciones" />
-              </ListItem>
-              <ListItem
-                button
-                sx={{ pl: 4 }}
-                onClick={() => navigateTo("/videos/tecnicos")}
-              >
-                <ListItemIcon>
-                  <AgricultureOutlined sx={{ color: "white" }} />
-                </ListItemIcon>
-                <ListItemText primary="Técnicos" />
-              </ListItem>
-            </List>
-          </Collapse>
           <ListItem
             button
             onClick={() =>
