@@ -42,6 +42,7 @@ export const SlideShow = () => {
               className="fadeIn"
               placeholder="blur"
               blurDataURL={url}
+              sizes="(max-width: 900px) 90vw, (max-width: 1536px) 50vw, 70vw"
             />
             <Box
               position="absolute"

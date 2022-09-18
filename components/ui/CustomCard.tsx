@@ -12,7 +12,10 @@ export const CustomCard: FC<Props> = ({ image, title, description }) => {
   return (
     <Card sx={{ borderRadius: 8, bgcolor: "primary.light" }}>
       <CardMedia component="div" sx={{ width: "100%" }}>
-        <ResponsiveImage image={image} />
+        <ResponsiveImage
+          image={image}
+          sizes="(max-width: 900px) 90vw, (max-width: 1536px) 40vw"
+        />
       </CardMedia>
       <CardContent>
         <Typography gutterBottom variant="h5" component="h5">

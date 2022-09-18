@@ -7,6 +7,7 @@ interface Props {
   proportions?: `${number}%`;
   ContainerProps?: BoxProps;
   imageStyles?: CSSProperties;
+  sizes?: string;
 }
 
 export const ResponsiveImage: FC<Props> = ({

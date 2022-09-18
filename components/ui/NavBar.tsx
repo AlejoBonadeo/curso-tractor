@@ -71,7 +71,7 @@ export const NavBar = () => {
               Jornada
             </Link>
           </NextLink>
-          <NextLink href="/referencias" passHref>
+          <NextLink href="/referencias" passHref prefetch={false}>
             <Link
               fontSize="1.2em"
               color={
@@ -81,7 +81,7 @@ export const NavBar = () => {
               Referencias
             </Link>
           </NextLink>
-          <NextLink href="/fotos" passHref>
+          <NextLink href="/fotos" passHref prefetch={false}>
             <Link
               fontSize="1.2em"
               color={router.asPath !== "/fotos" ? "info.main" : "primary.dark"}

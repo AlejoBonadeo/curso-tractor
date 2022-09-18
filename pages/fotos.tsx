@@ -33,6 +33,7 @@ const Fotos = () => {
               <ResponsiveImage
                 image={`/curso-tractor/images/${image}`}
                 imageStyles={{ borderRadius: "20px", cursor: "pointer" }}
+                sizes="(max-width: 600) 90vw, (max-width: 900px) 45vw, 30vw"
               />
             </Grid>
           ))}

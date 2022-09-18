@@ -86,21 +86,33 @@ export const Sidebar = () => {
           </ListItem>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/videos/capacitaciones')}>
+              <ListItem
+                button
+                sx={{ pl: 4 }}
+                onClick={() => navigateTo("/videos/capacitaciones")}
+              >
                 <ListItemIcon>
-                  <AgricultureOutlined sx={{ color: 'white' }} />
+                  <AgricultureOutlined sx={{ color: "white" }} />
                 </ListItemIcon>
                 <ListItemText primary="Capacitaciones" />
               </ListItem>
-              <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/videos/demostraciones')}>
+              <ListItem
+                button
+                sx={{ pl: 4 }}
+                onClick={() => navigateTo("/videos/demostraciones")}
+              >
                 <ListItemIcon>
-                  <AgricultureOutlined sx={{ color: 'white' }} />
+                  <AgricultureOutlined sx={{ color: "white" }} />
                 </ListItemIcon>
                 <ListItemText primary="Demostraciones" />
               </ListItem>
-              <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/videos/tecnicos')}>
+              <ListItem
+                button
+                sx={{ pl: 4 }}
+                onClick={() => navigateTo("/videos/tecnicos")}
+              >
                 <ListItemIcon>
-                  <AgricultureOutlined sx={{ color: 'white' }} />
+                  <AgricultureOutlined sx={{ color: "white" }} />
                 </ListItemIcon>
                 <ListItemText primary="Técnicos" />
               </ListItem>
