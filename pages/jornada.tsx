@@ -9,13 +9,13 @@ const images: Image[] = [
     title: "Duración",
     description:
       "Es de día completo con descansos y almuerzo al mediodía, las personas que normalmente no están acostumbradas a estas jornadas largas, lo aprovechan de punta a punta, es su tema y para eso se fomenta la interacción en el comienzo.\n Cuando no es posible para a las personas una jornada completa, se fracciona en un días y medio o se complementa con otra actividad.\n El cierre se realiza con una entrega de certificados, siendo un incentivo para los participantes y útiles para las ART.",
-    image: "/curso-tractor/images/a6.jpg",
+    image: "/images/a6.jpg",
   },
   {
     title: "Modalidad de trabajo",
     description:
       "Una parte es una proyección con imágenes (sin contenidos para leer) y videos de corta duración. Otra parte es parte arriba del tractor para mostrar alguna maniobra y debajo (herramientas en mano), viendo todos los puntos importantes de servicio.",
-    image: "/curso-tractor/images/g4.png",
+    image: "/images/g4.png",
   },
 ];
 

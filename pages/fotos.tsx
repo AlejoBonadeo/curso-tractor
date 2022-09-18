@@ -28,10 +28,10 @@ const Fotos = () => {
               xs={12}
               sm={6}
               md={4}
-              onClick={() => setModalImage(`/curso-tractor/images/${image}`)}
+              onClick={() => setModalImage(`/images/${image}`)}
             >
               <ResponsiveImage
-                image={`/curso-tractor/images/${image}`}
+                image={`/images/${image}`}
                 imageStyles={{ borderRadius: "20px", cursor: "pointer" }}
                 sizes="(max-width: 600) 90vw, (max-width: 900px) 45vw, 30vw"
               />

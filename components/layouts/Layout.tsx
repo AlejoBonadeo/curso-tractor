@@ -21,7 +21,7 @@ export const Layout: FC<Props> = ({
         <meta name="description" content={description} />
         <meta name="og:title" content={title} />
         <meta name="og:description" content={description} />
-        <meta name="og:image" content="/curso-tractor/images/m34.JPG" />
+        <meta name="og:image" content="/images/m34.JPG" />
       </Head>
       <nav>
         <NavBar />

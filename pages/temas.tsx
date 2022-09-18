@@ -9,19 +9,19 @@ const images: Image[] = [
     title: "Seguridad",
     description:
       "Diferenciar un accidente de una falta de prevención (incidente)\nLa causas de estos siempre son el apuro o subestimar los riesgos (canchereada o negligencia pocas veces) se trabaja con eso.\nLa prevención son solo unos minutos, pero esenciales.",
-    image: "/curso-tractor/images/a2.png",
+    image: "/images/a2.png",
   },
   {
     title: "Uso y Manejo",
     description:
       "Instrumentos: que indican y su importancia\nComandos: cuando y como se usan, trabajos eficientes cuidando los componentes que se le puede pedir a un tractor y cuales son sus limites\nNociones de fuerza del motor, lastrado y patinaje para la diaria, evitando los tecnicismos.",
-    image: "/curso-tractor/images/m13.png",
+    image: "/images/m13.png",
   },
   {
     title: "Mantenimiento",
     description:
       "Funcionamiento de los sistemas de tractor para entender su conservación\nComo realizar el mantenimiento de los componentes, promoviendo el conocimiento de cada uno sobre su máquina para no dejar temas sin resolver una vez encaminado el servicio.\nAjustes y regulaciones para prevenir desgastes.",
-    image: "/curso-tractor/images/m31.jpg",
+    image: "/images/m31.jpg",
   },
 ];
 

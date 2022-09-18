@@ -5,17 +5,17 @@ import "react-slideshow-image/dist/styles.css";
 
 const slideImages = [
   {
-    url: "/curso-tractor/images/m34.JPG",
+    url: "/images/m34.JPG",
     description:
       "La capacitación fue desarrollada para evitar las roturas en la maquinaria, Aportando a las personas pautas claras para el oficio.",
   },
   {
-    url: "/curso-tractor/images/a1.png",
+    url: "/images/a1.png",
     description:
       "Se trabaja con las personas, sus conocimientos y costumbres, para lograr inmediato cambio de actitud con los equipos.",
   },
   {
-    url: "/curso-tractor/images/t10.jpg",
+    url: "/images/t10.jpg",
     description:
       "No todas las personas tienen experiencia, pero de todas se espera eficiencia, la capacitación es el camino más económico.",
   },
