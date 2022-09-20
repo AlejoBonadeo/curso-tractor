@@ -10,7 +10,7 @@ const slideImages = [
       "La capacitación fue desarrollada para evitar las roturas en la maquinaria, Aportando a las personas pautas claras para el oficio.",
   },
   {
-    url: "/images/a1.png",
+    url: "/images/a7.jpeg",
     description:
       "Se trabaja con las personas, sus conocimientos y costumbres, para lograr inmediato cambio de actitud con los equipos.",
   },
@@ -50,7 +50,7 @@ export const SlideShow = () => {
               bottom="0%"
               height="100%"
               width="100%"
-              bgcolor="rgba(0, 0, 0, .4)"
+              bgcolor="rgba(0, 0, 0, .3)"
               display="flex"
               alignItems="center"
               justifyContent="center"
