@@ -11,7 +11,7 @@ const Error404 = () => {
       description="Parece que la página que buscas no existe"
     >
       <Box
-        bgcolor="primary.light"
+        bgcolor="#f1f1f1"
         display="flex"
         flexDirection="column"
         justifyContent="center"

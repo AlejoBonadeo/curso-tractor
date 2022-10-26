@@ -16,7 +16,7 @@ const Fotos = () => {
       title="Curso Tractor - Fotos"
       description="Fotos de todo lo relacionado al curso"
     >
-      <Box bgcolor="primary.light" display="flex" flexDirection="column">
+      <Box display="flex" flexDirection="column" bgcolor="#f1f1f1" width="100%" borderRadius={5}>
         <Typography variant="h3" component="h1" p={2}>
           Fotos
         </Typography>

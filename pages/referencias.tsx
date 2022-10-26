@@ -15,7 +15,7 @@ import { referencias } from "../data";
 const Referencias = () => {
   return (
     <Layout title="Curso Tractor - Referencias" description="Referencias">
-      <Box bgcolor="primary.light" width="100%">
+      <Box bgcolor="#f1f1f1" width="100%" borderRadius={5}>
         <Typography variant="h3" component="h1" p={2}>
           Referencias
         </Typography>
