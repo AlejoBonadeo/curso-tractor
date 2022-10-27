@@ -12,8 +12,9 @@ import {
   FacebookOutlined,
   Instagram,
   MenuOutlined,
+  YouTube
 } from "@mui/icons-material";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { UiContext } from "../../context";
 
 export const NavBar = () => {
@@ -103,6 +104,17 @@ export const NavBar = () => {
           <Link sx={{ display: { xs: "none", md: "block" } }} target="_blank">
             <IconButton size="large" aria-label="Instagram">
               <Instagram sx={{ color: "#fff" }} />
+            </IconButton>
+          </Link>
+        </NextLink>
+        <NextLink
+          href="https://www.youtube.com/channel/UCvATXdypCD9Jg2yvPJNJw-g"
+          passHref
+          target="_blank"
+        >
+          <Link sx={{ display: { xs: "none", md: "block" } }} target="_blank">
+            <IconButton size="large" aria-label="Instagram">
+              <YouTube sx={{ color: "#fff" }}/>
             </IconButton>
           </Link>
         </NextLink>

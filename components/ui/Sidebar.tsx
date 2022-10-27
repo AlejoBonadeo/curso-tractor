@@ -18,6 +18,7 @@ import {
   FacebookOutlined,
   ExpandMoreOutlined,
   ExpandLessOutlined,
+  YouTube,
 } from "@mui/icons-material";
 import { UiContext } from "../../context";
 import { Instagram } from "@mui/icons-material";
@@ -98,6 +99,17 @@ export const Sidebar = () => {
               <Instagram sx={{ color: "white" }} />
             </ListItemIcon>
             <ListItemText primary="Instagram" />
+          </ListItem>
+          <ListItem
+            button
+            onClick={() =>
+              navigateTo("https://www.youtube.com/channel/UCvATXdypCD9Jg2yvPJNJw-g")
+            }
+          >
+            <ListItemIcon>
+              <YouTube sx={{ color: "white" }} />
+            </ListItemIcon>
+            <ListItemText primary="YouTube" />
           </ListItem>
         </List>
       </Box>
